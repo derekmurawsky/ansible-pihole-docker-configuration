@@ -1,0 +1,6 @@
+---
+- name: Restart dnsmasq container
+  docker_container:
+    name: "{{ pihole_container_name }}"
+    state: started
+    restart: yes

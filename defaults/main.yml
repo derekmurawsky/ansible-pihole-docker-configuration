@@ -1,0 +1,18 @@
+# Name of the container to restart with the handler
+pihole_container_name: pihole
+
+# Full path to PiHole's dnsmasq.d directory
+pihole_dnsmasq_configuration_path: /etc/dnsmasq.d
+
+# PiHole only supports one conditional forward domain. 
+# This allows for additional ones to be added in a clean manner.
+dnsmasq_conditional_forwarders: 
+  []
+  # - address:                       192.168.1.2
+  #   domain:                        ns1.internal
+
+# Who wants to manage domains through a web UI? Put them here instead!
+dnsmasq_static_addresses:
+  []
+  # - address:                       192.168.1.2
+  #   name:                          pihole.internal

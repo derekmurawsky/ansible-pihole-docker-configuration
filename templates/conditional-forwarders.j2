@@ -1,0 +1,6 @@
+{{ ansible_managed | comment }}
+# Additional Conditional dnsmasq_conditional_forwarders
+#
+{%   for item in dnsmasq_conditional_forwarders %}
+server=/{{ item['domain'] }}/{{ item['address'] }}
+{%   endfor %}

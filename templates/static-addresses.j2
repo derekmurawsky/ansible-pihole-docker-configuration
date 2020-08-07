@@ -1,0 +1,6 @@
+{{ ansible_managed | comment }}
+# Internal hostnames
+#
+{%   for item in dnsmasq_static_addresses %}
+address=/{{ item['name'] }}/{{ item['address'] }}
+{%   endfor %}

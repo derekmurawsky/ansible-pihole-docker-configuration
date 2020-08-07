@@ -1,0 +1,3 @@
+# Having issues with Molecule. Ignoring for now.
+tests/*
+molecule/*
